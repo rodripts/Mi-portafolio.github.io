@@ -381,7 +381,11 @@ footer {
     }
    
 }
-@media screen and (max-width: 425px){}
+@media screen and (max-width: 425px){
+    .hero-img {
+        width: 200%;
+    }
+}
 @media screen and (max-width: 320px){
     i {
         top: 10px;
