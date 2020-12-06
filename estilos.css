@@ -121,7 +121,7 @@ header {
 .projects-container {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 300px;
+    margin-bottom: 300px;
 }
 .projects-container div {
     width: 25%;
