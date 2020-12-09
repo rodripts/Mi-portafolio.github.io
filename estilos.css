@@ -352,6 +352,7 @@ footer {
     }
     .container-about-me {
         flex-wrap: wrap;
+        margin-bottom: 150px;
     }
     .co-container-hero h1 {
         font-size: 25px;
@@ -366,10 +367,11 @@ footer {
         display: block;
         white-space: nowrap;
         margin-left: 20px;
+        margin-bottom: 150px;
     }
     .projects-container div {
         display: inline-block;
-        width: 90%;
+        width: 80%;
     }
     .text-about-me {
         width: 300px;
