@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    background-color: $color3;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px -1px 9px 4px rgba(0,0,0,0.71);
+    color: $color2;
+    h1 {
+        font-family: $fuente1;
+        font-size: 25px;
+        margin: $margin-header;
+    }
+    img {
+        margin: $margin-header;
+        width: 35px;
+        height: 35px;
+    }
+}

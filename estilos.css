@@ -1,422 +1,146 @@
 * {
-    margin: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 body {
-    color: white;
-    background-color: #1d1d1d;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  background-color: #EAECEE;
 }
-i {
-    display: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(100, 100, 100, .8);
-    position: fixed;
-    z-index: 1000;
-    top: 17px;
-    left: 17px;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
+
+.header {
+  position: fixed;
+  background-color: #EAECEE;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px -1px 9px 4px rgba(0, 0, 0, 0.71);
+  color: #2A6DF4;
 }
-i img {
-    width: 33px;
-    height: 33px;
-}
-.container-general {
-    max-width: 1150px;
-    flex: 1;
-    margin: 0 auto;
-    height: inherit;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    flex-wrap: inherit;
-    overflow: inherit;
-}  
-header {
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,0,1,0.5956757703081232) 43%, rgba(0,212,255,0) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 20;
+.header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  margin: 12px 20px;
 }
 .header img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    margin-left: 60px;
+  margin: 12px 20px;
+  width: 35px;
+  height: 35px;
 }
-.header li {
-    list-style: none;
-    transition: .6s;
-}
-.header li:hover {
-    width: 120px;
-    height: 30px;
-    background-color: #d11507;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    border-radius: 10px;
-    text-shadow: none;
-}
-.header ul {
-    display: flex;
-    margin-right: 60px;
-}
-.header li a {
-    text-decoration: none;
-    color: white;
-    margin: 0 20px;
-}
-/* Menu */
-.menu {
-    display: none;
-}
-/* Hero */
-.hero-img {
-    width: 100%;
-}
+
 .hero {
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+  color: #2A6DF4;
 }
-.text-hero-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+.hero img {
+  margin-top: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
-.co-container-hero {
-    text-align: center;
+.hero h1 {
+  margin-top: 15px;
+  font-size: 40px;
 }
-.co-container-hero h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+.hero h2 {
+  margin-top: 5px;
+  font-size: 20px;
 }
-.co-container-hero span {
-    color: #d11507;
+.hero button {
+  background-color: #2A6DF4;
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  height: 50px;
+  margin: 20px auto;
+  font-size: 20px;
+  color: #EAECEE;
 }
-/* Projects */
-.projects-tittle {
-    font-size: 35px;
-    margin: 80px 0 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+.projects h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2A6DF4;
 }
-.projects-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 300px;
+.projects__container div {
+  width: 80%;
+  height: 150px;
+  margin: 15px auto;
+  border: 2px solid #2A6DF4;
+  border-radius: 15px;
 }
-.projects-container div {
-    width: 25%;
-    height: 300px;
-    border-radius: 10px;
-    border: 2px solid white;
-    position: relative;
-    overflow: hidden;
+.projects__container-netflix {
+  background-image: url(./img/netflix.png);
+  background-size: 100%;
+  background-position: center;
 }
-.img-figure-container {
-    transition: 0.4s;
+.projects__container-google {
+  background-image: url(./img/google.png);
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.projects-container div:hover .img-figure-container {
-    filter: blur(12px);
+
+.aboutMe {
+  width: 100%;
+  margin-top: 75px;
+  text-align: center;
 }
-.projects-container div:hover .data-container {
-    display: flex;
-    filter: none;
+.aboutMe h1 {
+  color: #2A6DF4;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
 }
-.projects-container h1 {
-    font-size: 25px;
-    text-align: center;
-    margin: 30px 100%;
+.aboutMe p {
+  margin: 10px 30px;
+  font-size: 20px;
+  line-height: 35px;
 }
-.projects-container h2 {
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    font-weight: 100;
+
+.footer {
+  background-color: #3B3A3A;
+  margin-top: 75px;
+  text-align: center;
 }
-.buttons {
-    text-align: center;
-    margin: 30px auto;
-    flex-wrap: wrap;
+.footer h1 {
+  color: #2A6DF4;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  padding: 15px;
 }
-.buttons button:hover {
-    opacity: .7;
-    cursor: pointer;
+.footer__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 25px;
 }
-.buttons button {
-    width: 120px;
-    height: 35px;
-    background-color: #d11507;
-    border: none;
-    border-radius: 5px;
-    margin: 5px auto;
+.footer__container a {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
 }
-.buttons a {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
+.footer__container a div {
+  width: 50px;
+  height: 50px;
 }
-/* google project */
-.google-project img {
-    width: 80%;
+.footer__container-github {
+  background-image: url(./img/git-icon.png);
+  background-size: 100%;
 }
-.google-project figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer__container-twitter {
+  background-image: url(./img/twitter-icon.png);
+  background-size: 50px;
 }
-.google-project article {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    top: 0;
+.footer__container-facebook {
+  background-image: url(./img/fb-icon.png);
+  background-size: 50px;
 }
-/* netflix project */
-.netflix-project img {
-    width: 95%;
-}
-.netflix-project figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.netflix-project article {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-}
-/* portafolio project */
-.portfolio-project img {
-    width: 160%;
-    height: 100%;
-    opacity: .4;
-}
-.portfolio-project figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.portfolio-project article {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-}
-/* Sobre mi */
-.about-me h1 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 60px;
-}
-.container-about-me {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 300px;
-}
-.container-about-me img {
-    max-width: 100%;
-    border-radius: 50%;
-    margin-bottom: 60px;
-}
-.container-about-me figure {
-    width: 50%;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-.text-about-me {
-    width: 50%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.text-about-me h1 {
-    margin-bottom: 15px;
-}
-.text-about-me p {
-    text-align: center;
-    font-size: 20px;
-}
-/* Contacto */
-.contact {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
-    background-color: #333333;
-}
-.contact div {
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    margin: 0 20px;
-}
-.contact div:hover {
-    opacity: .7;
-}
-.fb {
-    background-image: url(./img/facebook.png);
-}
-.tw {
-    background-image: url(./img/twitter.png);
-}
-.git {
-    background-image: url(./img/github.png);
-}
-.lk {
-    background-image: url(./img/linkedin.png);
-}
-/* Footer */
-footer {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-@media screen and (max-width: 1024px){
-    .container-about-me {
-        justify-content: center;
-    }
-}
-@media screen and (max-width: 768px){
-    i {
-        display: flex;
-    }
-    .header {
-        display: none;
-    }
-    .menu {
-        display: block;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(101, 101, 101, .9);
-        font-size: 25px;
-        position: fixed;
-        z-index: 500;
-        text-align: center;
-        right: 1000px;
-        transition: .7s;
-    }
-    .menu-list {
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .menu-list li {
-        margin: 70px 0;
-    }
-    .menu-list a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 30px;
-    }
-    .menu.is-active {
-        right: 0;
-    }
-    .container-about-me {
-        flex-wrap: wrap;
-        margin-bottom: 150px;
-    }
-    .co-container-hero h1 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    .down-icon {
-        width: 50px;
-    }
-    .projects-container {
-        width: 100%;
-        overflow: scroll;
-        display: block;
-        white-space: nowrap;
-        margin-left: 20px;
-        margin-bottom: 150px;
-    }
-    .projects-container div {
-        display: inline-block;
-        width: 80%;
-    }
-    .text-about-me {
-        width: 300px;
-    }
-    .text-about-me h1 {
-        font-size: 30px;
-    }
-    .text-about-me p {
-        font-size: 18px;
-    }
-   
-}
-@media screen and (max-width: 425px){
-    .hero-img {
-        width: 200%;
-    }
-}
-@media screen and (max-width: 320px){
-    i {
-        top: 10px;
-        left: 10px;
-    }
-    .co-container-hero h1 {
-        margin-top: 35px;
-    }
-    .projects h1 {
-        font-size:27px;
-    }
-    .about-me h1 {
-        font-size: 27px;
-    }
-    .text-about-me h1 {
-        font-size: 25px;
-    }
-    .text-about-me p {
-        font-size: 15px;
-    }
-    .projects-container {
-        padding-bottom: 100px;
-    }
-    .container-about-me {
-        margin-bottom: 100px;
-    }
-    .contact div {
-        width: 45px;
-        height: 45px;
-    }
+.footer__container-linkedin {
+  background-image: url(./img/link-icon.png);
+  background-size: 50px;
 }

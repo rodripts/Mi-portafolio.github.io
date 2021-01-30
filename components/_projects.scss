@@ -1,0 +1,29 @@
+.projects {
+    h1 {
+        font-family: $fuente1;
+        font-size: $fuente-size-2;
+        text-align: center;
+        margin-bottom: 25px;
+        color: $color2;
+    }
+    &__container {
+        div {
+            width: 80%;
+            height: 150px;
+            margin: 15px auto;
+            border: 2px solid $color2;
+            border-radius: 15px;
+        }
+        &-netflix {
+            background-image: url(./img/netflix.png);
+            background-size: 100%;
+            background-position: center;
+        }
+        &-google {
+            background-image: url(./img/google.png);
+            background-size: 85%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

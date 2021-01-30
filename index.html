@@ -3,154 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="./img/perfil.jpg">
-    <title>Rodrigo Torres. Frontend Developer</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@500&family=Roboto+Slab:wght@300&display=swap');</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Rodrigo Torres | Front-end developer</title>
 </head>
 <body>
-    <i id="burguer-button">
-        <img src="./img/menu-button.png" alt="">
-    </i>
     <header class="header">
-        <div class="container-general">
-            <img src="./img/perfil.jpg" alt="">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#hero">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#proyectos">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#sobre-mi">Sobre mi</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <img src="./img/menu-icon.png" alt="">
+       <h1>Rodrigo</h1>
     </header>
-    <section class="menu" id="menu-card">
-        <ul class="menu-list">
-            <li>
-                <a href="#hero">Inicio</a>
-            </li>
-            <li>
-                <a href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-                <a href="#sobre-mi">Sobre mi</a>
-            </li>
-            <li>
-                <a href="#contacto">Contacto</a>
-            </li>
-        </ul>
-    </section>
-    <section class="hero" id="hero">
-        <img src="./img/hero-img.jpg" class="hero-img">
-        <div class="text-hero-container">
-            <div class="co-container-hero">
-                <h1>Hola! <span>Soy Rodrigo Torres</span><br>Front-end <span>Developer</span></h1>
-                <img src="./img/down-icon.png" class="down-icon">
+    <main>
+        <section class="hero">
+            <img src="./img/perfil.jpg" alt="">
+            <h1>Rodrigo Torres</h1>
+            <h2>Frontend Developer</h2>
+            <button>¡Conoce mas!</button>
+        </section>
+        <section class="projects">
+            <h1>Proyectos recientes</h1>
+            <div class="projects__container">
+                <div class="projects__container-netflix"></div>
+                <div class="projects__container-google"></div>
+                <div class="projects__container-portafolio"></div>
             </div>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="container-general">
-            <h1 class="projects-tittle" id="proyectos">Mis proyectos</h1>
-            <div class="projects-container">
-                <div class="google-project">
-                    <figure class="img-figure-container">
-                        <img src="./img/google.png" alt="">
-                    </figure>
-                    <article class="data-container">
-                        <h1>Replica de Google</h1>
-                        <h2>10 / 08 / 2020</h2>
-                        <section class="buttons">
-                            <button class="button1">
-                                <a href="https://github.com/rodripts/Clon-de-Google.github.io" target="_blank">Repositorio</a>
-                            </button>
-                            <button class="button2">
-                                <a href="https://rodripts.github.io/Clon-de-Google.github.io/Index.html" target="_blank">Ver</a>
-                            </button>
-                        </section>
-                    </article>
-                </div>
-                <div class="portfolio-project">
-                    <figure class="img-figure-container">
-                        <img src="./img/portfolio.jpg" alt="">
-                    </figure>
-                    <article class="data-container">
-                        <h1>Mi Portafolio</h1>
-                        <h2>10 / 08 / 2020</h2>
-                        <section class="buttons">
-                            <button class="button1">
-                                <a href="https://github.com/rodripts/Mi-portafolio.github.io/tree/master" target="_blank">Repositorio</a>
-                            </button>
-                            <button class="button2">
-                                <a href="https://rodripts.github.io/Mi-portafolio.github.io/" target="_blank">Ver</a>
-                            </button>
-                        </section>
-                    </article>
-                </div>
-                <div class="netflix-project">
-                    <figure class="img-figure-container">
-                        <img src="./img/netflix.png" alt="">
-                    </figure>
-                    <article class="data-container">
-                        <h1>Replica de Netflix</h1>
-                        <h2>10 / 08 / 2020</h2>
-                        <section class="buttons">
-                            <button class="button1">
-                                <a href="https://github.com/rodripts/Clon-de-Netflix.github.io/tree/master" target="_blank">Repositorio</a>
-                            </button>
-                            <button class="button2">
-                                <a href="https://rodripts.github.io/Clon-de-Netflix.github.io/" target="_blank">Ver</a>
-                            </button>
-                        </section>
-                    </article>
-                </div>
+        </section>
+        <section class="aboutMe">
+            <h1>Mi nombre es...</h1>
+            <p>Rodrigo Torres. Soy de Mexico, Tabasco, soy desarrollador web y actualmente estudiante de Platzi.
+                Me desenvuelvo con herramientas como HTML, CSS y JavaScript.
+                Me dedico a construir paginas web para ayudar a las personas con su marca o sus negocios.
+                Me gustan los retos y nunca paro de aprender.</p>
+        </section>
+        <footer class="footer">
+            <h1>Hola! Puedes contactarme por estas redes sociales</h1>
+            <div class="footer__container">
+                <a href="https://github.com/rodripts" >
+                    <div class="footer__container-github"></div>
+                </a>
+                <a href="https://twitter.com/rodritps" >
+                    <div class="footer__container-twitter"></div>
+                </a>
+                <a href="https://www.facebook.com/rodritps" >
+                    <div class="footer__container-facebook"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/rodrigo-torres-perez-3701951a3/" >
+                    <div class="footer__container-linkedin"></div>
+                </a>
             </div>
-        </div>
-    </section>
-    <section class="about-me" id="sobre-mi">
-        <div class="container-general">
-            <h1>¿Quien soy?</h1>
-            <div class="container-about-me">
-                <figure>
-                    <img src="./img/fotoDeMi.jpg" alt="">
-                </figure>
-                <div class="text-about-me">
-                    <h1>Mi nombre es...</h1>
-                    <p>Rodrigo Torres. Soy de Mexico, Tabasco, soy desarrollador web y actualmente estudiante de Platzi. <br>
-                         Me desenvuelvo con herramientas como HTML, CSS y JavaScript. <br>
-                        Me dedico a construir paginas web para ayudar a las personas con su marca o sus negocios. <br>
-                         Me gustan los retos y nunca paro de aprender.
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contacto">
-        <a href="https://www.linkedin.com/in/rodrigo-torres-perez-3701951a3/" target="_blank">
-            <div class="lk"></div>
-        </a>
-        <a href="https://www.facebook.com/rodritps" target="_blank">
-            <div class="fb"></div>
-        </a>
-        <a href="https://twitter.com/rodritps" target="_blank">
-            <div class="tw"></div>
-        </a>
-        <a href="https://github.com/rodripts" target="_blank">
-            <div class="git"></div>
-        </a>
-    </section>
-    <footer>
-        <div class="container-general">
-            Hecho por Rodrigo Torres 2020 © 
-        </div>
-    </footer>
-    <script src="main.js"></script>
+        </footer>
+    </main>
 </body>
 </html>

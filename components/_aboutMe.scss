@@ -1,0 +1,15 @@
+.aboutMe {
+    width: 100%;
+    margin-top: 75px;
+    text-align: center;
+    h1 {
+        color: $color2;
+        font-family: $fuente1;
+        font-size: $fuente-size-2;
+    }
+    p {
+        margin: 10px 30px;
+        font-size: $fuente-size-1;
+        line-height: 35px;
+    }
+}

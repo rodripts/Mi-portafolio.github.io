@@ -1,0 +1,16 @@
+$fuente1: 'Oswald', sans-serif;
+$fuente2: 'Roboto', sans-serif;
+$color1: #3B3A3A;
+$color2: #2A6DF4;
+$color3: #EAECEE;
+$margin-header: 12px 20px;
+$fuente-size-1: 20px;
+$fuente-size-2: 35px;
+
+* {
+    margin: 0;
+    font-family: $fuente2;
+}
+body {
+    background-color: $color3;
+}
